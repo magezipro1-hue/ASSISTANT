@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-
+<script>
+if(localStorage.getItem("loggedIn") !== "true"){
+    window.location.href = "login.html";
+}
+</script>
 <head>
     <title>Student Learning Assistant</title>
 
@@ -133,7 +137,7 @@
 </div>
 
 <div class="footer">
-    <p>© 2026 Student Learning Assistant | ICT Science Project</p>
+    <p>Â© 2026 Student Learning Assistant | ICT Science Project</p>
 </div>
 
 </body>
