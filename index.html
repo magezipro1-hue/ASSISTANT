@@ -3,13 +3,6 @@
 <head>
     <html>
 <head>
-
-<script>
-if(localStorage.getItem("loggedIn") !== "true"){
-    window.location.href = "login.html";
-}
-</script>
-
 <title>Student Learning Assistant</title>
     <title>Student Learning Assistant</title>
 
@@ -135,29 +128,7 @@ if(localStorage.getItem("loggedIn") !== "true"){
         <p>Click below to start learning:</p>
 
         <a href="quiz.html">
-            <button>Start Quiz</button>
-        </a>
-    </div>
-<div style="text-align:center; margin-top:20px;">
-    <button onclick="logout()" style="
-        background-color:red;
-        color:white;
-        padding:12px 20px;
-        border:none;
-        border-radius:8px;
-        cursor:pointer;
-        font-size:16px;">
-        🚪 Logout
-    </button>
-</div>
-<script>
-function logout(){
-    localStorage.removeItem("loggedIn");
-    localStorage.removeItem("userEmail");
-
-    window.location.href = "login.html";
-}
-</script>
+            
 </div>
 
 <div class="footer">
