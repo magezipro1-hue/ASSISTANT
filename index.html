@@ -133,7 +133,16 @@ if(localStorage.getItem("loggedIn") !== "true"){
             <button>Start Quiz</button>
         </a>
     </div>
+<button onclick="logout()">Logout</button>
 
+<script>
+function logout(){
+    localStorage.removeItem("loggedIn");
+    localStorage.removeItem("userEmail");
+
+    window.location.href = "login.html";
+}
+</script>
 </div>
 
 <div class="footer">
